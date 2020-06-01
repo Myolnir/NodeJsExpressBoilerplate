@@ -17,6 +17,6 @@ const container = createContainer();
 module.exports = container.register({
   controller: asClass(controller).singleton(),
   database: asClass(database).singleton(),
+  service: asClass(service).singleton(),
   config: asValue(config),
-  raceExporterService: asClass(service).singleton(),
 });

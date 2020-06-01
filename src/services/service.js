@@ -9,7 +9,7 @@ module.exports = class Service {
      * @param {*} logger
      */
   async retrieveAllActivities (logger) {
-    logger.info('Retrieving all activities from db');
+    logger.info('Retrieving all data from db');
     const data = await this.database.get(logger);
     return data;
   }
